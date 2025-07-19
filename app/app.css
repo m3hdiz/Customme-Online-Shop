@@ -1,21 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *), @media (prefers-color-scheme: dark));
+@theme {
+  /* Primary color */
+  --color-primary: #a72f3b;
+
+  /* Tints */
+  --color-tint-1: #ffffff;
+  --color-tint-2: #f6eaeb;
+  --color-tint-3: #edd5d8;
+  --color-tint-4: #e5c1c4;
+  --color-tint-5: #dcacb1;
+  --color-tint-6: #ca8289;
+  --color-tint-7: #b59562;
+
+  /* Shades */
+  --color-shade-1: #000000;
+  --color-shade-2: #110505;
+  --color-shade-3: #21090c;
+  --color-shade-4: #320e12;
+  --color-shade-5: #431318;
+  --color-shade-6: #641c23;
+  --color-shade-7: #86262f;
+
+  /* Neutral colors */
+  --color-neutral-gray1: #f8f8f8;
+  --color-neutral-gray2: #f0f0f0;
+  --color-neutral-gray3: #ededed;
+  --color-neutral-gray4: #d6d6d6;
+  --color-neutral-gray5: #cbcbcb;
+  --color-neutral-gray6: #afafaf;
+  --color-neutral-gray7: #989898;
+  --color-neutral-gray8: #656565;
+  --color-neutral-gray9: #4c1c23;
+  --color-neutral-gray10: #242424;
+
+  /* State colors */
+  --color-state-error: #c30000;
+  --color-state-error-light: #ed2e2e;
+  --color-state-error-bg: #fff2f2;
+  --color-state-warning: #a9791c;
+  --color-state-warning-light: #f4b740;
+  --color-state-warning-bg: #fff8e1;
+  --color-state-success: #00966d;
+  --color-state-success-light: #00ba88;
+  --color-state-success-bg: #f3fdfa;
+
+  /* Font Sizes */
+  /* Headings */
+  --text-heading1: 44px;
+  --text-heading1--line-height: 1.4; /* 140% */
+  --text-heading1--font-weight: 700;
+
+  --text-heading2: 40px;
+  --text-heading2--line-height: 1.4;
+  --text-heading2--font-weight: 700;
+
+  --text-heading3: 32px;
+  --text-heading3--line-height: 1.4;
+  --text-heading3--font-weight: 700;
+
+  --text-heading4: 24px;
+  --text-heading4--line-height: 1.4;
+  --text-heading4--font-weight: 700;
+
+  --text-heading5: 20px;
+  --text-heading5--line-height: 1.4;
+  --text-heading5--font-weight: 700;
+
+  --text-heading6: 18px;
+  --text-heading6--line-height: 1.4;
+  --text-heading6--font-weight: 700;
+
+  /* Body */
+  --text-body1: 20px;
+  --text-body1--line-height: 1.8; /* 180% */
+  --text-body1--font-weight: 400;
+
+  --text-body2: 18px;
+  --text-body2--line-height: 1.8;
+  --text-body2--font-weight: 400;
+
+  --text-body3: 16px;
+  --text-body3--line-height: 1.8;
+  --text-body3--font-weight: 400;
+
+  --text-body4: 14px;
+  --text-body4--line-height: 1.8;
+  --text-body4--font-weight: 400;
+
+  --text-body5: 12px;
+  --text-body5--line-height: 1.8;
+  --text-body5--font-weight: 400;
+
+  --text-body-light: 12px;
+  --text-body-light--line-height: 1.8;
+  --text-body-light--font-weight: 300;
+
+  /* Captions */
+  --text-caption1: 14px;
+  --text-caption1--line-height: 1.8;
+  --text-caption1--font-weight: 700;
+
+  --text-caption2: 12px;
+  --text-caption2--line-height: 1.8;
+  --text-caption2--font-weight: 400;
+
+  --text-caption3: 10px;
+  --text-caption3--line-height: 1.8;
+  --text-caption3--font-weight: 700;
+
+  --text-caption4: 10px;
+  --text-caption4--line-height: 1.8;
+  --text-caption4--font-weight: 400;
+
+  /* Buttons */
+  --text-btn1: 16px;
+  --text-btn1--line-height: 1.8;
+  --text-btn1--font-weight: 500;
+
+  --text-btn2: 14px;
+  --text-btn2--line-height: 24px;
+  --text-btn2--font-weight: 500;
+
+  /* Overline in design but the correct phrase is line-through on what it actually does */
+  --text-linethrough1: 16px;
+  --text-linethrough1--line-height: 1.8;
+  --text-linethrough1--font-weight: 400;
+
+  --text-linethrough2: 12px;
+  --text-linethrough2--line-height: 1.8;
+  --text-linethrough2--font-weight: 700;
+
+  /* Underline */
+  --text-underline1: 16px;
+  --text-underline1--line-height: 1.8;
+  --text-underline1--font-weight: 400;
+
+  --text-underline2: 12px;
+  --text-underline2--line-height: 1.8;
+  --text-underline2--font-weight: 700;
+
+  --text-underline3: 10px;
+  --text-underline2--line-height: 1.8;
+  --text-underline2--font-weight: 300;
+}
+
 @layer base {
   html {
     font-family: "Noto Sans Arabic", system-ui, sans-serif;
+  }
+
+  h1 {
+    @apply text-heading1;
+  }
+  h2 {
+    @apply text-heading2;
+  }
+  h3 {
+    @apply text-heading3;
+  }
+  h4 {
+    @apply text-heading4;
+  }
+  h5 {
+    @apply text-heading5;
+  }
+  h6 {
+    @apply text-heading6;
   }
 }
 
 html,
 body {
   @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
-
-button {
-  @apply cursor-pointer;
 }
