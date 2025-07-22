@@ -1,22 +1,23 @@
-import LOGO from "../../public/LOGO.svg";
-import LOGOdark from "../../public/LOGOdark.svg";
-import TYPE from "../../public/TYPE.svg";
-import TYPEdark from "../../public/TYPEdark.svg";
-import SearchIco from "../../public/search-normal.svg";
-import LoginIco from "../../public/Login.svg";
-import LogindarkIco from "../../public/Logindark.svg";
-import CartIco from "../../public/shopping-cart.svg";
-import CartIcodark from "../../public/shopping-cartdark.svg";
-import Menu from "../../public/menu.svg";
-import Menudark from "../../public/menudark.svg";
-import User from "../../public/user.svg";
-import Userdark from "../../public/userdark.svg";
+import LOGO from "../src/svgs/LOGO.svg";
+import LOGOdark from "../src/svgs/LOGOdark.svg";
+import TYPE from "../src/svgs/TYPE.svg";
+import TYPEdark from "../src/svgs/TYPEdark.svg";
+import LoginIco from "../src/svgs/Login.svg";
+import LogindarkIco from "../src/svgs/Logindark.svg";
+import CartIco from "../src/svgs/shopping-cart.svg";
+import CartIcodark from "../src/svgs/shopping-cartdark.svg";
+import Menu from "../src/svgs/menu.svg";
+import Menudark from "../src/svgs/menudark.svg";
+import User from "../src/svgs/user.svg";
+import Userdark from "../src/svgs/userdark.svg";
 import { NavLink } from "react-router";
+import { Input } from "../components/ui/input";
+import SearchBar from "./ui/SearchBar";
 
 export default function Header() {
   return (
     <>
-      <div className="dark:bg-black max-sm:flex-row-reverse inline-flex items-center w-svw justify-evenly max-sm:h-10 lg:px-27 max-sm:px-3 max-sm:my-3 sm:py-3">
+      <div className="bg-background max-sm:flex-row-reverse inline-flex items-center w-svw justify-evenly max-sm:h-10 lg:px-27 max-sm:px-3 max-sm:my-3 sm:py-3">
         <div className="inline-flex gap-1 sm:px-3 max-sm:h-10 h-12.5">
           <img className="dark:hidden" src={LOGO} alt="logo" />
           <img className="hidden dark:block" src={LOGOdark} alt="logo" />
@@ -31,26 +32,7 @@ export default function Header() {
             alt="typelogo"
           />
         </div>
-        <div className="relative max-lg:flex-1 mx-6 max-sm:mx-3">
-          <input
-            className="max-sm:h-8 h-12 max-xl:w-full xl:w-[596px] max-sm:py-0 max-sm:px-3 p-6 rounded-2xl border border-gray-300 dark:border-gray-600 peer"
-            type="search"
-            name="search"
-            id="search"
-          />
-          <label
-            className="absolute text-gray-500 max-sm:top-0.5 max-sm:right-3 right-6 top-2.5 peer-focus:hidden"
-            htmlFor="search"
-          >
-            جستجو
-          </label>
-          <NavLink
-            to={""}
-            className="absolute max-sm:top-2 top-3 max-sm:left-3 left-6 max-sm:w-4"
-          >
-            <img src={SearchIco} alt="SearchIco" />
-          </NavLink>
-        </div>
+        <SearchBar />
         <div className="inline-flex gap-4 items-center sm:h-10 sm:py-2">
           <div className="inline-flex gap-1 items-center px-1 lg:px-[22.5px] max-sm:hidden">
             {/* <button>
