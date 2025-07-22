@@ -13,6 +13,7 @@ import Userdark from "../src/svgs/userdark.svg";
 import { NavLink } from "react-router";
 import { Input } from "../components/ui/input";
 import SearchBar from "./ui/SearchBar";
+import { Button } from "./ui/button";
 
 export default function Header() {
   return (
@@ -35,18 +36,18 @@ export default function Header() {
         <SearchBar />
         <div className="inline-flex gap-4 items-center sm:h-10 sm:py-2">
           <div className="inline-flex gap-1 items-center px-1 lg:px-[22.5px] max-sm:hidden">
-            {/* <button>
+            {/* <Button variant="ghost" size="icon">
               <img className="min-w-6 dark:hidden" src={User} alt="User" />
               <img
                 className="min-w-6 hidden dark:block"
                 src={Userdark}
                 alt="User"
               />
-            </button>
+            </Button>
             <div className="max-lg:hidden w-26">
               <button>حساب کاربری</button>
             </div> */}
-            <button>
+            <Button variant="ghost" size="icon">
               <img
                 className="min-w-6 dark:hidden"
                 src={LoginIco}
@@ -57,7 +58,7 @@ export default function Header() {
                 src={LogindarkIco}
                 alt="LoginIco"
               />
-            </button>
+            </Button>
             <div className="max-lg:hidden w-26">
               <span>
                 <button>ورود</button>
@@ -69,7 +70,7 @@ export default function Header() {
             </div>
           </div>
           <div className="inline-flex gap-1 items-center px-3 lg:px-[16.5px] max-sm:hidden">
-            <button>
+            <Button variant="ghost" size="icon">
               <img
                 className="min-w-6 dark:hidden"
                 src={CartIco}
@@ -80,14 +81,18 @@ export default function Header() {
                 src={CartIcodark}
                 alt="CartIco"
               />
-            </button>
+            </Button>
             <button className="max-lg:hidden w-16">سبد خرید</button>
           </div>
           <div className="sm:hidden">
-            <button className="flex justify-center items-center min-w-8">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="flex justify-center items-center min-w-8"
+            >
               <img className="dark:hidden" src={Menu} alt="Menu" />
               <img className="hidden dark:block" src={Menudark} alt="Menu" />
-            </button>
+            </Button>
           </div>
         </div>
       </div>
