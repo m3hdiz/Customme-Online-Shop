@@ -4,6 +4,9 @@ import youtube from "../src/svgs/YouTube svg.svg";
 import facebook from "../src/svgs/facebook-icon.svg";
 import pintrest from "../src/svgs/Pinterest svg.svg";
 import instagram from "../src/svgs/Instagram svg.svg";
+import enamad from "../src/svgs/01.svg";
+import samandehi from "../src/svgs/02.svg";
+import etehadie from "../src/svgs/03.svg";
 import { Link } from "react-router";
 
 export default function Footer() {
@@ -64,9 +67,65 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2 h-89 bg-primary0">
-        <div></div>
-        <div></div>
+      <section className="max-sm:hidden h-89 bg-primary0 lg:px-27 text-primary-foreground dark:text-foreground dark:bg-background">
+        <div className="grid grid-cols-5 pt-13.25">
+          <div className="col-span-3 flex justify-between lg:pl-28">
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                همراه با کاستومی
+              </p>
+              <div className="flex flex-col gap-5">
+                <p className="text-body4">فروش محصولات</p>
+                <p className="text-body4">فرصت همکاری</p>
+                <p className="text-body4">تماس با ما</p>
+                <p className="text-body4">نقشه سایت</p>
+              </div>
+            </div>
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                خدمات مشتریان
+              </p>
+              <div className="flex flex-col gap-5">
+                <p className="text-body4">سوالات متداول</p>
+                <p className="text-body4">حریم خصوصی</p>
+                <p className="text-body4">ثبت شکایت</p>
+                <p className="text-body4">ضمانت نامه محصولات</p>
+              </div>
+            </div>
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                راهنمای خرید
+              </p>
+              <div className="flex flex-col gap-5">
+                <p className="text-body4">راهنمای ثبت سفارش</p>
+                <p className="text-body4">شیوه های پرداخت</p>
+                <p className="text-body4">نحوه ارسال سفارش ها</p>
+                <p className="text-body4">شرایط بازگرداندن محصول</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-2 flex flex-col items-center">
+            <h6>فروشگاه اینترنتی کاستومی</h6>
+            <div className="flex gap-8 justify-center mt-10.25 mx-2">
+              <p className="text-body5">تماس با پشتیبانی : ۳۴۵۶۰۰۰-۰۲۱</p>
+              <p className="text-body5">پاسخگویی ۲۴ ساعته ، ۷ روز هفته</p>
+            </div>
+            <div className="flex w-56.5 h-16 justify-between mt-18">
+              <Link to="http://enamad.ir//">
+                <img src={enamad} alt="enamad" />
+              </Link>
+              <Link to="http://samandehi.ir/">
+                <img src={samandehi} alt="samandehi" />
+              </Link>
+              <Link to="http://ecunion.ir//">
+                <img src={etehadie} alt="اتحادیه کشوری کسب و کارهای مجازی" />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <p className="text-caption4 pt-9">
+          تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
+        </p>
       </section>
     </>
   );
