@@ -111,13 +111,13 @@ export default function Footer() {
               <p className="text-body5">پاسخگویی ۲۴ ساعته ، ۷ روز هفته</p>
             </div>
             <div className="flex w-56.5 h-16 justify-between mt-18">
-              <Link to="http://enamad.ir//">
+              <Link to="http://enamad.ir/">
                 <img src={enamad} alt="enamad" />
               </Link>
               <Link to="http://samandehi.ir/">
                 <img src={samandehi} alt="samandehi" />
               </Link>
-              <Link to="http://ecunion.ir//">
+              <Link to="http://ecunion.ir/">
                 <img src={etehadie} alt="اتحادیه کشوری کسب و کارهای مجازی" />
               </Link>
             </div>

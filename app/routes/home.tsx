@@ -12,6 +12,8 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
+      <Header />
+      <main className="mt-2 border-t border-input">asdsd</main>
       <Footer />
     </>
   );
