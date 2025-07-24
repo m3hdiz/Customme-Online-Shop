@@ -12,7 +12,7 @@ import User from "../src/svgs/user.svg";
 import Userdark from "../src/svgs/userdark.svg";
 import { NavLink } from "react-router";
 import { Input } from "../components/ui/input";
-import SearchBar from "./ui/SearchBar";
+import SearchBar from "./SearchBar";
 import { Button } from "./ui/button";
 
 export default function Header() {

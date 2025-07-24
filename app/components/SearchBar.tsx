@@ -1,5 +1,5 @@
-import { Input } from "./input";
-import SearchIco from "../../src/svgs/search-normal.svg";
+import { Input } from "./ui/input";
+import SearchIco from "../src/svgs/search-normal.svg";
 
 export default function SearchBar() {
   return (
