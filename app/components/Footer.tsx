@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <>
       <section className="grid sm:grid-cols-2 w-screen h-45 text-primary-foreground bg-shade-6 dark:bg-shade-6 dark:text-foreground">
-        <div className="max-sm:hidden flex justify-center items-center">
-          <div className="flex flex-col gap-1 justify-center max-md:pr-5">
+        <div className="max-sm:hidden flex items-center lg:pr-26.5 sm:pr-14">
+          <div className="flex flex-col gap-1 justify-center">
             <p className="text-body4">
               برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد نمایید
             </p>
@@ -26,7 +26,7 @@ export default function Footer() {
               >
                 ایمیل شما
               </label>
-              <Button className="w-20 h-10 bg-primary0 text-btn1 hover:bg-primary0/60">
+              <Button className="w-20 h-10 bg-primary0 hover:ring-2 text-btn1">
                 ثبت
               </Button>
             </div>
@@ -67,9 +67,9 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="max-sm:hidden h-89 bg-primary0 lg:px-27 text-primary-foreground dark:text-foreground dark:bg-background">
+      <section className="max-sm:hidden h-89 bg-primary0 sm:px-7 md:px-14 lg:px-27 text-primary-foreground dark:text-foreground dark:bg-background">
         <div className="grid grid-cols-5 pt-13.25">
-          <div className="col-span-3 flex justify-between lg:pl-28">
+          <div className="col-span-3 flex justify-between max-xl:px-3 xl:pl-28">
             <div>
               <p className="pb-8 text-caption1 underline underline-offset-8">
                 همراه با کاستومی
