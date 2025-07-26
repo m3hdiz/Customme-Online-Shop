@@ -3,7 +3,7 @@ import SearchIco from "../src/svgs/search-normal.svg";
 
 export default function SearchBar() {
   return (
-    <div className="relative max-lg:flex-1 mx-6 max-sm:mx-3">
+    <div className="relative max-xl:flex-1 mx-6 max-sm:mx-3">
       <Input
         type="search"
         name="search"

@@ -18,8 +18,8 @@ import { Button } from "./ui/button";
 export default function Header() {
   return (
     <>
-      <div className="bg-background max-sm:flex-row-reverse inline-flex items-center w-svw justify-evenly max-sm:h-10 lg:px-27 max-sm:px-3 max-sm:my-3 sm:py-3">
-        <div className="inline-flex gap-1 sm:px-3 max-sm:h-10 h-12.5">
+      <div className="bg-background max-sm:flex-row-reverse flex items-center justify-between xl:justify-evenly w-full max-sm:h-10 max-sm:px-3 max-sm:my-3 sm:py-3 sm:px-14 lg:px-27">
+        <div className="inline-flex gap-1 max-sm:h-10 h-12.5">
           <img className="dark:hidden" src={LOGO} alt="logo" />
           <img className="hidden dark:block" src={LOGOdark} alt="logo" />
           <img
@@ -34,8 +34,8 @@ export default function Header() {
           />
         </div>
         <SearchBar />
-        <div className="inline-flex gap-4 items-center sm:h-10 sm:py-2">
-          <div className="inline-flex gap-1 items-center px-1 lg:px-[22.5px] max-sm:hidden">
+        <div className="flex gap-4 items-center sm:h-10 sm:py-2">
+          <div className="flex gap-1 items-center max-sm:hidden">
             {/* <Button variant="ghost" size="icon">
               <img className="min-w-6 dark:hidden" src={User} alt="User" />
               <img
@@ -69,7 +69,7 @@ export default function Header() {
               </span>
             </div>
           </div>
-          <div className="inline-flex gap-1 items-center px-3 lg:px-[16.5px] max-sm:hidden">
+          <div className="inline-flex gap-1 items-center max-sm:hidden">
             <Button variant="ghost" size="icon">
               <img
                 className="min-w-6 dark:hidden"
