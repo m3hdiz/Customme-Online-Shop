@@ -12,119 +12,141 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <>
-      <section className="grid grid-cols-5 w-screen h-45 text-primary-foreground bg-shade-6 dark:bg-shade-6 dark:text-foreground sm:px-14 lg:px-27">
-        <div className="col-span-3 max-sm:hidden flex items-center">
-          <div className="flex flex-col gap-1 justify-center">
-            <p className="text-body4">
-              برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد نمایید
-            </p>
-            <div className="relative flex gap-3.5">
-              <Input className="h-10 lg:w-98 px-2 py-1.5 peer" type="email" />
-              <label
-                className="absolute top-2.5 right-2 text-body5 text-neutral-gray6 peer-focus:hidden"
-                htmlFor="footerEmail"
-              >
-                ایمیل شما
-              </label>
-              <Button className="w-20 h-10 bg-primary0 hover:ring-2 text-btn1">
-                ثبت
-              </Button>
+      <div className="bg-shade-6 dark:bg-shade-6 text-primary-foreground dark:text-foreground">
+        <div className="mx-[10vw]">
+          <section className="grid grid-cols-5 gap-x-10 h-45 mx-auto max-w-[1224px]">
+            <div className="col-span-3 max-sm:hidden flex items-center">
+              <div className="flex flex-col gap-1 justify-center">
+                <p className="text-body4">
+                  برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد
+                  نمایید
+                </p>
+                <div className="relative flex gap-3.5">
+                  <Input
+                    className="h-10 lg:w-98 px-2 py-1.5 peer"
+                    type="email"
+                  />
+                  <label
+                    className="absolute top-2.5 right-2 text-body5 text-neutral-gray6 peer-focus:hidden"
+                    htmlFor="footerEmail"
+                  >
+                    ایمیل شما
+                  </label>
+                  <Button className="w-20 h-10 bg-primary0 hover:ring-2 text-btn1">
+                    ثبت
+                  </Button>
+                </div>
+              </div>
             </div>
-          </div>
+            <div className="col-span-2 max-sm:col-span-full flex justify-center items-center">
+              <div className="flex flex-col max-sm:gap-4 gap-6 items-center">
+                <p className="max-sm:hidden text-body4">
+                  ما را در شبکه های اجتماعی دنبال کنید
+                </p>
+                <p className="sm:hidden text-body-light">
+                  تماس با پشتیبانی : ۳۴۵۶۰۰۰-۰۲۱
+                </p>
+                <p className="sm:hidden text-body-light">
+                  پاسخگویی ۲۴ ساعته ، ۷ روز هفته
+                </p>
+                <div className="flex w-44 justify-between">
+                  <Link to="http://www.youtube.com/">
+                    <img
+                      className="h-6 max-sm:h-5"
+                      src={youtube}
+                      alt="youtube"
+                    />
+                  </Link>
+                  <Link to="http://www.pintrest.com/">
+                    <img
+                      className="h-6 max-sm:h-5"
+                      src={pintrest}
+                      alt="pintrest"
+                    />
+                  </Link>
+                  <Link to="http://www.facebook.com/">
+                    <img
+                      className="h-6 max-sm:h-5"
+                      src={facebook}
+                      alt="facebook"
+                    />
+                  </Link>
+                  <Link to="http://www.instagram.com/">
+                    <img
+                      className="h-6 max-sm:h-5"
+                      src={instagram}
+                      alt="instagram"
+                    />
+                  </Link>
+                </div>
+                <p className="sm:hidden text-caption4">
+                  تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
-        <div className="col-span-2 max-sm:col-span-full flex justify-center items-center">
-          <div className="flex flex-col max-sm:gap-4 gap-6 items-center">
-            <p className="max-sm:hidden text-body4">
-              ما را در شبکه های اجتماعی دنبال کنید
-            </p>
-            <p className="sm:hidden text-body-light">
-              تماس با پشتیبانی : ۳۴۵۶۰۰۰-۰۲۱
-            </p>
-            <p className="sm:hidden text-body-light">
-              پاسخگویی ۲۴ ساعته ، ۷ روز هفته
-            </p>
-            <div className="flex w-44 justify-between">
-              <Link to="http://www.youtube.com/">
-                <img className="h-6 max-sm:h-5" src={youtube} alt="youtube" />
-              </Link>
-              <Link to="http://www.pintrest.com/">
-                <img className="h-6 max-sm:h-5" src={pintrest} alt="pintrest" />
-              </Link>
-              <Link to="http://www.facebook.com/">
-                <img className="h-6 max-sm:h-5" src={facebook} alt="facebook" />
-              </Link>
-              <Link to="http://www.instagram.com/">
-                <img
-                  className="h-6 max-sm:h-5"
-                  src={instagram}
-                  alt="instagram"
-                />
-              </Link>
+      </div>
+      <div className="mx-[10vw]">
+        <section className="grid grid-cols-5 pt-13.25 max-sm:hidden h-89 bg-primary0 text-primary-foreground dark:text-foreground dark:bg-background mx-auto max-w-[1224px]">
+          <div className="col-span-3 flex justify-between max-xl:px-3 xl:pl-28">
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                همراه با کاستومی
+              </p>
+              <ul className="flex flex-col gap-5">
+                <li className="text-body4">فروش محصولات</li>
+                <li className="text-body4">فرصت همکاری</li>
+                <li className="text-body4">تماس با ما</li>
+                <li className="text-body4">نقشه سایت</li>
+              </ul>
             </div>
-            <p className="sm:hidden text-caption4">
-              تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="grid grid-cols-5 pt-13.25 max-sm:hidden h-89 bg-primary0 text-primary-foreground dark:text-foreground dark:bg-background sm:px-14 lg:px-27">
-        <div className="col-span-3 flex justify-between max-xl:px-3 xl:pl-28">
-          <div>
-            <p className="pb-8 text-caption1 underline underline-offset-8">
-              همراه با کاستومی
-            </p>
-            <div className="flex flex-col gap-5">
-              <p className="text-body4">فروش محصولات</p>
-              <p className="text-body4">فرصت همکاری</p>
-              <p className="text-body4">تماس با ما</p>
-              <p className="text-body4">نقشه سایت</p>
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                خدمات مشتریان
+              </p>
+              <ul className="flex flex-col gap-5">
+                <li className="text-body4">سوالات متداول</li>
+                <li className="text-body4">حریم خصوصی</li>
+                <li className="text-body4">ثبت شکایت</li>
+                <li className="text-body4">ضمانت نامه محصولات</li>
+              </ul>
+            </div>
+            <div>
+              <p className="pb-8 text-caption1 underline underline-offset-8">
+                راهنمای خرید
+              </p>
+              <ul className="flex flex-col gap-5">
+                <li className="text-body4">راهنمای ثبت سفارش</li>
+                <li className="text-body4">شیوه های پرداخت</li>
+                <li className="text-body4">نحوه ارسال سفارش ها</li>
+                <li className="text-body4">شرایط بازگرداندن محصول</li>
+              </ul>
             </div>
           </div>
-          <div>
-            <p className="pb-8 text-caption1 underline underline-offset-8">
-              خدمات مشتریان
-            </p>
-            <div className="flex flex-col gap-5">
-              <p className="text-body4">سوالات متداول</p>
-              <p className="text-body4">حریم خصوصی</p>
-              <p className="text-body4">ثبت شکایت</p>
-              <p className="text-body4">ضمانت نامه محصولات</p>
+          <div className="col-span-2 flex flex-col items-center">
+            <h6>فروشگاه اینترنتی کاستومی</h6>
+            <div className="flex gap-8 justify-center mt-10.25 mx-2">
+              <p className="text-body5">تماس با پشتیبانی : ۳۴۵۶۰۰۰-۰۲۱</p>
+              <p className="text-body5">پاسخگویی ۲۴ ساعته ، ۷ روز هفته</p>
+            </div>
+            <div className="flex w-56.5 h-16 justify-between mt-18">
+              <Link to="http://enamad.ir/">
+                <img src={enamad} alt="enamad" />
+              </Link>
+              <Link to="http://samandehi.ir/">
+                <img src={samandehi} alt="samandehi" />
+              </Link>
+              <Link to="http://ecunion.ir/">
+                <img src={etehadie} alt="اتحادیه کشوری کسب و کارهای مجازی" />
+              </Link>
             </div>
           </div>
-          <div>
-            <p className="pb-8 text-caption1 underline underline-offset-8">
-              راهنمای خرید
-            </p>
-            <div className="flex flex-col gap-5">
-              <p className="text-body4">راهنمای ثبت سفارش</p>
-              <p className="text-body4">شیوه های پرداخت</p>
-              <p className="text-body4">نحوه ارسال سفارش ها</p>
-              <p className="text-body4">شرایط بازگرداندن محصول</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-span-2 flex flex-col items-center">
-          <h6>فروشگاه اینترنتی کاستومی</h6>
-          <div className="flex gap-8 justify-center mt-10.25 mx-2">
-            <p className="text-body5">تماس با پشتیبانی : ۳۴۵۶۰۰۰-۰۲۱</p>
-            <p className="text-body5">پاسخگویی ۲۴ ساعته ، ۷ روز هفته</p>
-          </div>
-          <div className="flex w-56.5 h-16 justify-between mt-18">
-            <Link to="http://enamad.ir/">
-              <img src={enamad} alt="enamad" />
-            </Link>
-            <Link to="http://samandehi.ir/">
-              <img src={samandehi} alt="samandehi" />
-            </Link>
-            <Link to="http://ecunion.ir/">
-              <img src={etehadie} alt="اتحادیه کشوری کسب و کارهای مجازی" />
-            </Link>
-          </div>
-        </div>
-        <p className="col-span-5 text-caption4 pt-9">
-          تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
-        </p>
-      </section>
+          <p className="col-span-5 text-caption4 pt-9">
+            تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد
+          </p>
+        </section>
+      </div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Footer from "~/components/Footer";
 import type { Route } from "./+types/home";
-import Header from "~/components/Header";
+import Navbar from "~/components/Navbar";
 import Mainmenu from "~/components/Main menu";
 
 export function meta({}: Route.MetaArgs) {
@@ -13,14 +13,17 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="lg:mt-2 lg:border-t border-input">
-        <div className="max-lg:hidden mt-6 mb-10">
+      <Navbar />
+      <header className="lg:mt-2 lg:border-t border-input">
+        <div className="max-lg:hidden mt-6 mb-10 mx-10vw">
           <Mainmenu />
         </div>
         <div></div>
-      </main>
-      <Footer />
+      </header>
+      <main></main>
+      <footer className="">
+        <Footer />
+      </footer>
     </>
   );
 }

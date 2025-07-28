@@ -3,8 +3,8 @@ import magicpen from "../src/svgs/magicpen.svg";
 
 export default function Mainmenu() {
   return (
-    <div className="h-16 flex gap-2 justify-center items-center sm:px-14 lg:px-27">
-      <Button className="bg-primary0 text-btn2 w-46 h-12">
+    <div className="h-16 flex gap-2 justify-center items-center mx-auto max-w-[1224px]">
+      <Button className="bg-primary0 text-btn2 text-white w-46 h-12">
         <img src={magicpen} alt="magicpen" />
         خودت طراحیش کن !
       </Button>
