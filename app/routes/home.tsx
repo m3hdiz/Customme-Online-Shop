@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <header className="lg:mt-2 lg:border-t border-input">
-        <div className="max-lg:hidden mt-6 mb-10 mx-10vw">
+        <div className="max-lg:hidden mt-6 mb-10">
           <Mainmenu />
         </div>
         <div></div>

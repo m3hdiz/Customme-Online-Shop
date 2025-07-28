@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <>
       <div className="sm:mx-[10vw]">
-        <nav className="bg-background max-sm:flex-row-reverse flex items-center justify-between max-sm:h-10 max-sm:px-3 max-sm:my-3 sm:py-3 mx-auto max-w-[1224px]">
+        <nav className="bg-background max-sm:flex-row-reverse flex items-center justify-between max-sm:h-10 max-sm:px-3 max-sm:my-3 sm:py-3 max-w-[1600px]">
           <div className="inline-flex gap-1 max-sm:h-10 h-12.5">
             <img className="dark:hidden" src={LOGO} alt="logo" />
             <img className="hidden dark:block" src={LOGOdark} alt="logo" />

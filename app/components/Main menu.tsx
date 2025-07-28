@@ -3,12 +3,12 @@ import magicpen from "../src/svgs/magicpen.svg";
 
 export default function Mainmenu() {
   return (
-    <div className="h-16 flex gap-2 justify-center items-center mx-auto max-w-[1224px]">
+    <div className="h-16 flex gap-2 items-center mx-[10vw]">
       <Button className="bg-primary0 text-btn2 text-white w-46 h-12">
         <img src={magicpen} alt="magicpen" />
         خودت طراحیش کن !
       </Button>
-      <div className="flex gap-8 px-6 py-5">
+      <div className="flex justify-between w-full mx-6 my-5">
         <Button variant="ghost" className="text-neutral-gray9 text-body3">
           پوشاک
         </Button>
